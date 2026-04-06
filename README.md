@@ -36,16 +36,17 @@ Insight:
 Training and validation accuracy increase steadily but there is slight overfitting in later epochs
 
 **Results**:
-precision    recall  f1-score   support
+## 📊 Classification Report
 
-      glioma       0.93      0.63      0.75       400
-  meningioma       0.74      0.69      0.72       400
-     notumor       0.93      0.98      0.95       400
-   pituitary       0.75      0.99      0.85       400
-
-    accuracy                           0.82      1600
-   macro avg       0.84      0.82      0.82      1600
-weighted avg       0.84      0.82      0.82      1600
+| Class        | Precision | Recall | F1-Score | Support |
+|-------------|----------|--------|----------|---------|
+| Glioma      | 0.93     | 0.63   | 0.75     | 400     |
+| Meningioma  | 0.74     | 0.69   | 0.72     | 400     |
+| No Tumor    | 0.93     | 0.98   | 0.95     | 400     |
+| Pituitary   | 0.75     | 0.99   | 0.85     | 400     |
+| **Accuracy** |          |        | **0.82** | 1600    |
+| **Macro Avg** | 0.84   | 0.82   | 0.82     | 1600    |
+| **Weighted Avg** | 0.84 | 0.82 | 0.82     | 1600    |
 
 **Confusion Matrix**:
 <img width="800" height="600" alt="confusion_matrix" src="https://github.com/user-attachments/assets/f69e2975-1a5f-43a1-a771-b207704a0773" />
