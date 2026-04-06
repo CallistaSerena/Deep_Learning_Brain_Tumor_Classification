@@ -26,18 +26,19 @@ Classes:
 Dataset not included due to its size
 
 **Model Comparison**:
+
 <img width="1200" height="600" alt="model_comparison" src="https://github.com/user-attachments/assets/9b0d5cba-bfbe-41c8-a489-3b50ca95193a" />
 Insight:
 MobileNetV2 + triangular architecture achieve the best results and outperforms other model combinations across all metrics
 
 **Training History**:
+
 <img width="1200" height="500" alt="training_history" src="https://github.com/user-attachments/assets/681c5459-abb4-4766-b9d9-a7f7ccb018be" />
 Insight:
 Training and validation accuracy increase steadily but there is slight overfitting in later epochs
 
 **Results**:
-## 📊 Classification Report
-
+Classification report
 | Class        | Precision | Recall | F1-Score | Support |
 |-------------|----------|--------|----------|---------|
 | Glioma      | 0.93     | 0.63   | 0.75     | 400     |
@@ -49,6 +50,7 @@ Training and validation accuracy increase steadily but there is slight overfitti
 | **Weighted Avg** | 0.84 | 0.82 | 0.82     | 1600    |
 
 **Confusion Matrix**:
+
 <img width="800" height="600" alt="confusion_matrix" src="https://github.com/user-attachments/assets/f69e2975-1a5f-43a1-a771-b207704a0773" />
 Insight:
 Strong performance in "pituitary" and "notumor" classes, but missclassifications occur between "glioma" and "meningioma" classes
