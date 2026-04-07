@@ -3,6 +3,7 @@
 
 ## Project Information:
 **Project Title**: Comparison of Pretrained CNN Models and Hidden Layer Architectures for Brain Tumor Classification Using MRI Images
+
 **Model**: Pretrained CNN models (MobileNetV2, ResNet50, EfficientNetB0) and hidden layers architectures (triangular, recgtangular, recto-triangular)
 
 
