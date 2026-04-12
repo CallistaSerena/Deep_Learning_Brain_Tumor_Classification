@@ -22,7 +22,9 @@ Experimental results show that the proposed model achieves strong classification
 
 **Dataset**:
 https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+
 Type: Images
+
 Classes:
 - No tumor
 - Glioma
