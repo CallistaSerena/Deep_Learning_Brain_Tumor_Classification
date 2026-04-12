@@ -31,6 +31,25 @@ Classes:
 
 Dataset not included due to its size
 
+**Dependencies**:
+All the depencies needed are documented in requirements.txt
+
+**Inference** (Using trained model):
+#Load model
+from tensorflow.keras.models import load_model 
+model = load_model("best_model.h5")
+#Prepare image
+import numpy as np 
+from tensorflow.keras.preprocessing import image 
+img = image.load_img("test.jpg", target_size=(224, 224)) 
+img_array = image.img_to_array(img) / 255.0 
+img_array = np.expand_dims(img_array, axis=0)
+#Predict
+prediction = model.predict(img_array) 
+class_names = ["glioma", "meningioma", "notumor", "pituitary"] 
+predicted_class = class_names[np.argmax(prediction)] 
+confidence = np.max(prediction) 
+print(predicted_class, confidence)
 
 **Model Comparison**:
 
@@ -55,8 +74,8 @@ Classification report
 | No Tumor    | 0.93     | 0.98   | 0.95     | 400     |
 | Pituitary   | 0.75     | 0.99   | 0.85     | 400     |
 | **Accuracy** |          |        | **0.82** | 1600    |
-| **Macro Avg** | 0.84   | 0.82   | 0.82     | 1600    |
-| **Weighted Avg** | 0.84 | 0.82 | 0.82     | 1600    |
+| Macro Avg | 0.84   | 0.82   | 0.82     | 1600    |
+| Weighted Avg | 0.84 | 0.82 | 0.82     | 1600    |
 
 
 **Confusion Matrix**:
@@ -69,3 +88,5 @@ Strong performance in "pituitary" and "notumor" classes, but missclassifications
 
 **Model Weights**:
 outputs/models/best_model.h5
+
+Author: Callista Serena Ekaputri
