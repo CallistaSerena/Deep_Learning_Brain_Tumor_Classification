@@ -33,6 +33,9 @@ Classes:
 
 Dataset not included due to its size
 
+**Training Environment**:
+
+Google Colap (PRO subscription) with T4 GPU
 
 **Dependencies**:
 All the depencies needed are documented in requirements.txt
