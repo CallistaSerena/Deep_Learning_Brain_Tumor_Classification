@@ -38,11 +38,13 @@ All the depencies needed are documented in requirements.txt
 
 **Inference** (Using trained model):
 
+
 #Load model
 
 from tensorflow.keras.models import load_model
 
 model = load_model("best_model.h5")
+
 
 #Prepare image
 
@@ -56,6 +58,7 @@ img_array = image.img_to_array(img) / 255.0
 
 img_array = np.expand_dims(img_array, axis=0)
 
+
 #Predict
 
 prediction = model.predict(img_array) 
@@ -67,6 +70,7 @@ predicted_class = class_names[np.argmax(prediction)]
 confidence = np.max(prediction) 
 
 print(predicted_class, confidence)
+
 
 
 **Model Comparison**:
